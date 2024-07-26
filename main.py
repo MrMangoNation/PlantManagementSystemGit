@@ -10,7 +10,7 @@ main.title("PlantManager")
 #First frame
 frm1 = ttk.Frame(main, padding=10)
 frm1.grid()
-
+#Second frame
 frm2 = ttk.Frame(main, padding=10)
 frm2.grid()
 
