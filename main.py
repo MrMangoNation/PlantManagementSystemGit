@@ -7,7 +7,7 @@ Spinach = Plant(name="Spinach", plantingMonth="August", sproutTime="3 weeks", gr
 
 main = Tk()
 main.title("PlantManager")
-
+#First frame
 frm1 = ttk.Frame(main, padding=10)
 frm1.grid()
 
