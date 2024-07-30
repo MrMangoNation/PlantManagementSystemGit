@@ -44,18 +44,24 @@ def addPlantWindow():
     #Creating frame and dropdown menu
     frmAddPlant = ttk.Frame(addPlantWindow, padding=10)
     frmAddPlant.grid()
-    changedLabel = ttk.Label(frmAddPlant, text="Wow!").grid(column=0, row=0)
+    changedLabel = Label(frmAddPlant, text="")
+    changedLabel.grid(row=0, column=0)
     ttk.Button(frmAddPlant, text="Exit window", command=addPlantWindow.destroy).grid(column=0, row=1)
     ttk.Button(frmAddPlant, text="Save plant", command=addPlantWindow.destroy).grid(column=1, row=1)
     
     Selected = StringVar(addPlantWindow)
-    Selected.set(PlantList[0])
+    Selected.set("cabbage")
 
     drop = OptionMenu(addPlantWindow,Selected, *PlantList)
     drop.grid(row=0, column=2)
 
     def ok():
-        print("Value is: " + Selected.get())
+        print(Selected.get())
+        showSelectedPlant()
+
+    def showSelectedPlant():
+        changedLabel["text"] = Selected.get()
+
     button = Button(addPlantWindow, text="OK", command=ok)
     button.grid(row=0,column=4)
 
