@@ -16,9 +16,10 @@ Extra information besides this that can be added later
 
 
 class Plant:
-    def __init__(self, name, plantingMonth, sproutTime, growTime, additionalRemarks):
+    def __init__(self, name, location, plantingMonth, sproutTime, growTime, additionalRemarks):
         print('Class created')
         self.name = name
+        self.location = location
         self.plantingMonth = plantingMonth
         self.sproutTime = sproutTime
         self.growTime = growTime
@@ -27,5 +28,3 @@ class Plant:
     #Returns a list with all the attributes of the plant class    
     def plantList(self):
         return [self.name, self.plantingMonth, self.sproutTime, self.growTime, self.additionalRemarks]
-
-Cabbage = Plant(name="Cabbage",plantingMonth="June", sproutTime="4 weeks", growTime="2 months", additionalRemarks="Could pass a dict or list here")

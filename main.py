@@ -28,7 +28,6 @@ def plantLabel(plant, tkinterFrame):
     j = 0
     for i in plant.plantList():
         ttk.Label(tkinterFrame, text=i).grid(column=0, row=j)
-        print(i)
         j += 1
 
 
