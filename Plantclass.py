@@ -9,7 +9,6 @@ It contains the following information per plant:
 - Additional remarks, stuff that might be usefull to know
 
 Extra information besides this that can be added later
-- Location of plant, where the plant is located, either in the grow box or in the hydro system
 
 """
 
