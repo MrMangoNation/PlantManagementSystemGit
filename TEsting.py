@@ -9,29 +9,29 @@ mainfrm = ttk.Frame(root, padding=20).grid()
 
 
 
+Frame1 = ttk.Frame(mainfrm, padding=5)
 
 
-nestedfrm1 = ttk.Frame(mainfrm, padding=10).grid(row=0)
-ttk.Label(nestedfrm1, text="nested frame 1").grid(column=0, row=0)
-ttk.Label(nestedfrm1, text="nested frame 1.1").grid(column=0, row=1)
-ttk.Label(nestedfrm1, text="nested frame 1.2").grid(column=0, row=2)
-ttk.Label(nestedfrm1, text="nested frame col1row2").grid(column=0, row=2)
-ttk.Label(nestedfrm1, text="nested frame 1.3").grid(column=0, row=3)
-ttk.Label(nestedfrm1, text="nested frame col1row3").grid(column=0, row=3)
-
-nestedfrm2 = ttk.Frame(mainfrm, padding=10).grid(row=1)
-ttk.Label(nestedfrm2, text="nested frame 2").grid(column=0, row=0)
-ttk.Label(nestedfrm2, text="nested frame 2.1").grid(column=0, row=1)
-ttk.Label(nestedfrm2, text="nested frame 2.2").grid(column=0, row=2)
-ttk.Label(nestedfrm2, text="nested frame 2 col1row2").grid(column=0, row=2)
-ttk.Label(nestedfrm2, text="nested frame 2.3").grid(column=0, row=3)
-ttk.Label(nestedfrm2, text="nested frame 2 col1row3").grid(column=0, row=3)
+#You have to seperate the assignment and the grid or else it doesnt work properly
 
 
+nestedfrm1 = ttk.Frame(mainfrm, padding=10)
+nestedfrm1.grid(row=0)
+n1 = ttk.Label(nestedfrm1, text="nested frame 1")
+n1.grid(row=0)
+n2 = ttk.Label(nestedfrm1, text="nested frame 1.1")
+n2.grid(row=1)
+n3 = ttk.Label(nestedfrm1, text="nested frame 1.2")
+n3.grid(row=2)
 
-nestedfrm3 = ttk.Frame(mainfrm, padding=10).grid(row=2)
-ttk.Label(nestedfrm3, text="nested frame 3").grid()
 
-
+nestedfrm2 = ttk.Frame(mainfrm, padding=10)
+nestedfrm2.grid(row=1)
+n4 = ttk.Label(nestedfrm2, text="nested frame 2")
+n4.grid(row=0)
+n5 = ttk.Label(nestedfrm2, text="nested frame 2.1")
+n5.grid(row=1)
+n6 = ttk.Label(nestedfrm2, text="nested frame 2.2")
+n6.grid(row=2)
 
 root.mainloop()

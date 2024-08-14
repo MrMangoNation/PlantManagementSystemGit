@@ -14,7 +14,10 @@ lastRow = returnLastRow(df)
 
 
 
+#Can use .iloc to get a row of a specific index
+#print(df.iloc[[lastRow]])
 
-print(lastRow)
-
-
+i = 0
+while i <= lastRow:
+    print(df.iloc[[i]])
+    i += 1
