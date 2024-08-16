@@ -8,7 +8,7 @@ PlantList = PlantDf['Plant'].tolist()
 
 Cabbage = Plant(name="Cabbage",location="PlantBox", plantingMonth="June", sproutTime="4 weeks", growTime="2 months", additionalRemarks="Could pass a dict or list here")
 Spinach = Plant(name="Spinach",location="PlantBox",  plantingMonth="August", sproutTime="3 weeks", growTime="3 months", additionalRemarks="Some info")
-
+#Main window
 main = Tk()
 main.title("PlantManager")
 #First frame
