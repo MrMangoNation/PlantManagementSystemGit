@@ -1,10 +1,10 @@
 This program is made for maintaining and planning for plants
-It is mostly built for myself in combination for a hydroponics system
 
 
 There are 2 layers to this program:
 - Database for plants that can be editted
 - GUI which tracks plant growth, and where growth can be logged
+
 Database:
 - Contains general information of the plant, such as projected growth time, harvest time and additional remarks to keep track of
 - Can be edited easily, to add or remove plants or cultivars
