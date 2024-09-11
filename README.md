@@ -24,3 +24,15 @@ GUI:
 - This will exist out of several windows using Tkinter allowing the user to add plants, remove plants, have the planted plants show in a nice overview
 - The main objective is to allow the user to easily change plants, and show a nice overview of what is planted
   
+
+More in-depth of each module:
+
+Database:
+This will consist of a CSV file containing a wide variety of plants with important information pertaining to them including growth time, harvest time, best month to plant in, and any additional remarks
+The CSV file will likely not be eddited much outside of adding new plants or cultivars when they are purchased.
+From this database a couple of things will need be read at certain points in the program:
+- When the user wants to add a planted plant, they will need to have the option to choose from the plants in the database
+- When the user wants to garner information about plants, they will need to be able to choose from the plants in the databse
+
+Plant tracking:
+This module will also have a CSV as a centerpiece
