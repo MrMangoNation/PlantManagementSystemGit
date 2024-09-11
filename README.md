@@ -1,14 +1,23 @@
 This program is made for maintaining and planning for plants
 
+The objective of this program is as follows:
+Allow a user to easily track when plants are planted and their projected growth and harvest times/dates
 
-There are 2 layers to this program:
-- Database for plants that can be editted
+
+There are 3 layers to this program:
+- Database for plants that can be editted which contains general information about plants
+- A way to track when which plants are planted, and be able to have a projected growth and harvest time
 - GUI which tracks plant growth, and where growth can be logged
 
 Database:
 - Contains general information of the plant, such as projected growth time, harvest time and additional remarks to keep track of
 - Can be edited easily, to add or remove plants or cultivars
 - The database is used in the GUI of the program as well to help the user plan their planting
+
+Plant tracking:
+- Allows the user to input when plants were planted
+- When plants are added, calculate projected growth and harvest time
+- Allow for restructuring and removal of plants when harvested
 
 GUI:
 - The main part of the program which shows all the information for the user regarding planted plants, information about the plants, projected growth and harvesting times
