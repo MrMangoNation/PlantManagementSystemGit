@@ -38,5 +38,3 @@ Plant tracking:
 This module will also have a CSV as a centerpiece. With this CSV the user will be able to track which plants are planted where.
 The CSV will work as a database keeping track of everything, and allowing it to be displayed with Tkinter, and allow the user to interact with the information from the CSV.
 This CSV will be both read from and written to a lot.
-
-
