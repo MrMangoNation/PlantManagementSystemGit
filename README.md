@@ -35,4 +35,8 @@ From this database a couple of things will need be read at certain points in the
 - When the user wants to garner information about plants, they will need to be able to choose from the plants in the databse
 
 Plant tracking:
-This module will also have a CSV as a centerpiece
+This module will also have a CSV as a centerpiece. With this CSV the user will be able to track which plants are planted where.
+The CSV will work as a database keeping track of everything, and allowing it to be displayed with Tkinter, and allow the user to interact with the information from the CSV.
+This CSV will be both read from and written to a lot.
+
+
