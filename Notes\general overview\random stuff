@@ -35,9 +35,12 @@ What data do we want stored in the CSV file?
         - This can be done with the tkinter calendar package
         - Have to figure out a way to work with dates
 - Location planted
+- Through the systemn allow for projected growth time, and harvest time from the database file
 Once we have this data, we need to write it to the CSV file
 One way to do this is with pandas and a DataFrame
+Load the CSV as a pandas dataframe, edit it and afterwards save it back to the CSV
 Later we can read from this CSV to display which plants are planted where
+Find a way to allow the user to set a predetermined size of the plant box/hydroponics system
 
 
 
@@ -51,8 +54,8 @@ Next steps:
         - Could load the CSV with pandas, change the data frame and then write the data frame back to the CSV
 - Plant list with information about plants herbs and other things that I can plant.
     - This can be done with a database maybe, since it does not need a lot of modifaction
-- 
+
 For plant frame
-- Can use a list with all the plant names, using a 
+- Can use a list with all the plant names, using a CSV file
 Create the frames before the function, with a while loop, stopping when the last plant has been hit
 Then create the labels for the plant with a function and a for loop, printing each property of the class to the frame
