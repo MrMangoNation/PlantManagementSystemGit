@@ -14,6 +14,8 @@ There’ll be 2 different CSV files
 1 which functions as a database that contains the data for all the plants and cultivars
 The second one will be used to keep track of the planted plants, when they’ve been planted and where
 
+Find a way to communicate between the GUI and the CSV file database, to lookup the name of the plant in the database and pull the needed properties from the plant
+
 
 PlantClass:
 This class will only be used to store data about a plant, such as its species, its best planting month etc.
@@ -43,8 +45,6 @@ Later we can read from this CSV to display which plants are planted where
 Find a way to allow the user to set a predetermined size of the plant box/hydroponics system
 
 
-
-
 Next steps:
 - Data preservation between sessions
     - Come up with a way to save the currently planted plants, and be able to load and read from this file and modify it.
@@ -59,3 +59,9 @@ For plant frame
 - Can use a list with all the plant names, using a CSV file
 Create the frames before the function, with a while loop, stopping when the last plant has been hit
 Then create the labels for the plant with a function and a for loop, printing each property of the class to the frame
+
+
+How to find a plant in the CSV through the GUI?
+- Once the CSV has been loaded as a dataframe in pandas, then we can lookup the name of the plant in the dataframe
+- Once found we can pull the needed properties from the dataframe, and display it in the GUI
+
