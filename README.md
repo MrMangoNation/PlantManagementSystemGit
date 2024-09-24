@@ -38,3 +38,71 @@ Plant tracking:
 This module will also have a CSV as a centerpiece. With this CSV the user will be able to track which plants are planted where.
 The CSV will work as a database keeping track of everything, and allowing it to be displayed with Tkinter, and allow the user to interact with the information from the CSV.
 This CSV will be both read from and written to a lot.
+
+
+Plants system
+
+Mock up:
+
+Plant box:
+Name of plant/crop/herb
+Location
+Date planted
+Aprox. Date for harvest
+Special notes
+
+
+There’ll be 2 different CSV files
+1 which functions as a database that contains the data for all the plants and cultivars
+The second one will be used to keep track of the planted plants, when they’ve been planted and where
+
+Find a way to communicate between the GUI and the CSV file database, to lookup the name of the plant in the database and pull the needed properties from the plant
+
+
+PlantClass:
+This class will only be used to store data about a plant, such as its species, its best planting month etc.
+This is more akin to a database, but done in CSV cuz I don’t know how to work with a database
+- Plant name
+    - Type of plant/cultivar
+- Best month to plant
+- Time it takes to sprout
+- Time it takes to grow/harvest from point of planting
+- Additional remarks that might be useful to know
+
+
+Using the CSV file to save, modify and move data between sessions
+What data do we want stored in the CSV file?
+- Plant (plantName)
+    - Type of plant/cultivar (optional)
+- Date planted
+    - From the date planted, also generate when approximately the plant would be ready for harvest
+        - This can be done with the tkinter calendar package
+        - Have to figure out a way to work with dates
+- Location planted
+- Through the systemn allow for projected growth time, and harvest time from the database file
+Once we have this data, we need to write it to the CSV file
+One way to do this is with pandas and a DataFrame
+Load the CSV as a pandas dataframe, edit it and afterwards save it back to the CSV
+Later we can read from this CSV to display which plants are planted where
+Find a way to allow the user to set a predetermined size of the plant box/hydroponics system
+
+
+Next steps:
+- Data preservation between sessions
+    - Come up with a way to save the currently planted plants, and be able to load and read from this file and modify it.
+    - Currently the plan is to use a CSV to save and edit the currently planted plants.
+        - Use a tk window to display the plants form the CSV file
+        - Find a way to edit the CSV with an entry window for the plants
+        - Could load the CSV with pandas, change the data frame and then write the data frame back to the CSV
+- Plant list with information about plants herbs and other things that I can plant.
+    - This can be done with a database maybe, since it does not need a lot of modifaction
+
+For plant frame
+- Can use a list with all the plant names, using a CSV file
+Create the frames before the function, with a while loop, stopping when the last plant has been hit
+Then create the labels for the plant with a function and a for loop, printing each property of the class to the frame
+
+
+How to find a plant in the CSV through the GUI?
+- Once the CSV has been loaded as a dataframe in pandas, then we can lookup the name of the plant in the dataframe
+- Once found we can pull the needed properties from the dataframe, and display it in the GUI
